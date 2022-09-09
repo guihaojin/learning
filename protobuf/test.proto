@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package test;
+
+message FieldOptions {
+    string name = 1;
+    repeated string options = 2;
+}
+
+message ConfigOptions {
+    repeated FieldOptions config_options = 1;
+}
